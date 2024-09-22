@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Oswald";
+}
+
+.container {
+    background-color: white;
+    width: 300px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* padding: 20px; */
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(-15px); /* 初始位移 */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* 淡入和位移动画 */
+  }
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0); /* 最终位置 */
+}
+
+main{
+    margin-top: 30%;
+}
+
+main h2 {
+    margin: 50px 0;
+    font-size: 30px;
+}
+
+#prompt{
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#prompt input{
+    width: 40px;
+    outline: none;
+    transform: translateY(-2.5px);
+}
+
+#startButton {
+    background-color: #00b894;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 8px 25px 6px 25px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 50px 0;
+}
+
+#startButton:hover {
+    background-color: #019f80;
+}
